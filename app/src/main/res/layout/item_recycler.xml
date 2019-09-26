@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+    <TextView
+            android:id="@+id/tvmovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="sans-serif-black"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/ivCover"
+            app:layout_constraintTop_toTopOf="@+id/ivCover" />
+
+    <TextView
+            android:id="@+id/tvvotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="TextView"
+            android:textColor="@android:color/holo_green_dark"
+            app:layout_constraintStart_toStartOf="@+id/tvmovies"
+            app:layout_constraintTop_toBottomOf="@+id/tvmovies" />
+
+    <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/tvvotes"
+            app:layout_constraintTop_toBottomOf="@+id/tvvotes" />
+
+    <ImageView
+            android:id="@+id/ivCover"
+            android:layout_width="130dp"
+            android:layout_height="195dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars[3]" />
+</android.support.constraint.ConstraintLayout>
